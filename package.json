@@ -1,0 +1,17 @@
+{
+  "name": "1712045",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
