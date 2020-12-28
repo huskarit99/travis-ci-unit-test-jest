@@ -1,8 +1,5 @@
 const Triangle = require('./Triangle');
 const Point = require('./Point');
-var pointA;
-var pointB;
-var pointC;
 
 function distance(a, b) {
     return Math.hypot((a.x - b.x), (a.y - b.y));
@@ -174,7 +171,7 @@ const A05 = new Point(1, 1);
 const B05 = new Point(2, 2);
 const C05 = new Point(1, 1);
 const triangle05 = new Triangle(A05, B05, C05);
-test('Kiểm tra tam giác với 2 điểm trùng nhau', () => {
+test('Kiểm tra chu vi tam giác với 2 điểm trùng nhau', () => {
     expect(triangle05.calculatePerimeter()).toStrictEqual({
         error: true,
         type: "Không phải là tam giác"
@@ -185,7 +182,7 @@ const A06 = new Point(0, 0);
 const B06 = new Point(0, 2);
 const C06 = new Point(5, 0);
 const triangle06 = new Triangle(A06, B06, C06);
-test('Kiểm tra tam giác vuông', () => {
+test('Kiểm tra chu vi tam giác vuông', () => {
     expect(triangle06.calculatePerimeter()).toBe(12.385164807134505);
 });
 
@@ -193,6 +190,6 @@ const A07 = new Point(-934534, -934534);
 const B07 = new Point(0, 0);
 const C07 = new Point(2349234, 823048932);
 const triangle07 = new Triangle(A07, B07, C07);
-test('Kiểm tra tam giác với số âm lớn', () => {
+test('Kiểm tra chu vi tam giác với số âm lớn', () => {
     expect(triangle07.calculatePerimeter()).toBe(1648363924.635632);
 });
